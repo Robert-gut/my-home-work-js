@@ -215,14 +215,117 @@
 
 ////////////////////555555
 
-const e = +prompt('введіть число');
+// const e = +prompt('введіть число');
+// let counter = 0
+//     for (let i = 2; i < e; i++){
+//         if (e % i == 0) counter++;
+// }
+// let flag = counter == 0 ? true : false;
+// console.log(flag);
+// if (flag) console.log('просте');
+// else console.log('не просте');
+        
+    
 
-if (e > 1) {
-    for (i = 2; i < e; i++){
-        if (e % i === 0) {
-            console.log('число не просте')
-        } else{
-            console.log('число просте')
-        }
+
+
+
+
+// let counter = 0;
+// while (counter < 5) {
+//     let name = prompt('input name');
+//     counter++;
+//     if (name.length < 5) continue;
+//     console.log('name')
+// }
+
+// let answer;
+// do {
+//     answer = +prompt('2 + 2 = ?')
+// } while (answer != 4);console.log('ok')
+
+// let number = +prompt('how mach?')
+
+// while (number) {
+//     document.write(` {number}`)
+//     number--
+// }
+
+
+// let number = +prompt('how mach?')
+// let number2 = +prompt('how mach2?')
+
+// console.log(number**number2)
+
+
+// let number1 = +prompt('1?')
+// let number2 = +prompt('2?')
+// let i = 1;
+// while (true) {
+//     if (number2 % i == 0 && number1 % i == 0) {
+//         console.log(i)
+//     }
+//     if (number1 == i || number2 == i) break;
+//     i++
+    
+// 
+
+// let n = 1000;
+// while (n) {
+//     n = n / 2;
+//     console.log(n)
+//     if (n <= 50) break;
+// }
+
+
+// const num = +prompt('число');
+// let a = 50
+// while (num) {
+//     let b = 50
+//     if (a > num) {
+//        a 
+//    }
+// }
+
+//////////////// 1   10.06.21
+
+let a = +prompt('Діапазон від ')
+let b = +prompt('Діапазон і до ')
+let c = a
+let w = true
+while (w) {
+    c++
+    a = a + c;
+    if (c == b) {
+        alert(a)
+        w = false
     }
 }
+
+///////////////////// 22222
+
+let number1 = +prompt('1 num? ')
+let number2 = +prompt('2 num?')
+let i = 1;
+while (true) {
+    if (number2 % i == 0 && number1 % i == 0) {
+        console.log(i)
+    }
+    if (number1 == i || number2 == i) break;
+    i++
+}
+
+
+//////////////////////3333333
+
+const q = prompt('к-ть цифер')
+alert('к-ть цифер: ' + q.length)
+
+
+//////////////////// **********
+
+let p = prompt('яке число ви хочет здвинуть?')
+let o = prompt('на скільки ви хочете його здвинуть?')
+
+alert(p.slice(o) + p.slice(0, o));
+
