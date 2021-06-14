@@ -289,43 +289,70 @@
 
 //////////////// 1   10.06.21
 
-let a = +prompt('Діапазон від ')
-let b = +prompt('Діапазон і до ')
-let c = a
-let w = true
-while (w) {
-    c++
-    a = a + c;
-    if (c == b) {
-        alert(a)
-        w = false
-    }
-}
+// let a = +prompt('Діапазон від ')
+// let b = +prompt('Діапазон і до ')
+// let c = a
+// let w = true
+// while (w) {
+//     c++
+//     a = a + c;
+//     if (c == b) {
+//         alert(a)
+//         w = false
+//     }
+// }
 
 ///////////////////// 22222
 
-let number1 = +prompt('1 num? ')
-let number2 = +prompt('2 num?')
-let i = 1;
-while (true) {
-    if (number2 % i == 0 && number1 % i == 0) {
-        console.log(i)
-    }
-    if (number1 == i || number2 == i) break;
-    i++
-}
+// let number1 = +prompt('1 num? ')
+// let number2 = +prompt('2 num?')
+// let i = 1;
+// while (true) {
+//     if (number2 % i == 0 && number1 % i == 0) {
+//         console.log(i)
+//     }
+//     if (number1 == i || number2 == i) break;
+//     i++
+// }
 
 
 //////////////////////3333333
 
-const q = prompt('к-ть цифер')
-alert('к-ть цифер: ' + q.length)
+// const q = prompt('к-ть цифер')
+// alert('к-ть цифер: ' + q.length)
 
 
 //////////////////// **********
 
-let p = prompt('яке число ви хочет здвинуть?')
-let o = prompt('на скільки ви хочете його здвинуть?')
+// let p = prompt('яке число ви хочет здвинуть?')
+// let o = prompt('на скільки ви хочете його здвинуть?')
 
-alert(p.slice(o) + p.slice(0, o));
+// alert(p.slice(o) + p.slice(0, o));
 
+
+
+///////////////////// вісіліца
+
+const m = ['Січень', 'Лютий', 'Березень', 'Квітень', 'Травень', 'Червень', 'Червень', 'Липень', 'Серпень', 'Вересень', 'Жовтень', 'Листопад', ]
+
+let a = m[parseInt(Math.random()*10)];
+console.log(a)
+
+let v = ["*" ,"*" , "*", "*", "*", "*", "*", "*"]
+
+while(true){
+    alert(v)
+    let b = prompt('1 символ')
+    if(b.length == 1){
+        for (let i = 0; i < a.length; i++) {
+            if(b == a[i].toLowerCase()){
+                console.log(`Правельна буква ${i}`)
+                v[i] = b
+              
+            }
+        }
+    
+    }else{
+        console.log('тільки 1 букву')
+    }
+}
