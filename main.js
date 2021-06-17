@@ -331,28 +331,87 @@
 
 
 
-///////////////////// вісіліца
+// ///////////////////// вісіліца
 
-const m = ['Січень', 'Лютий', 'Березень', 'Квітень', 'Травень', 'Червень', 'Червень', 'Липень', 'Серпень', 'Вересень', 'Жовтень', 'Листопад', ]
+// const m = ['Січень', 'Лютий', 'Березень', 'Квітень', 'Травень', 'Червень', 'Червень', 'Липень', 'Серпень', 'Вересень', 'Жовтень', 'Листопад', ]
 
-let a = m[parseInt(Math.random()*10)];
-console.log(a)
+// let a = m[parseInt(Math.random()*10)];
+// console.log(a)
 
-let v = ["*" ,"*" , "*", "*", "*", "*", "*", "*"]
-
-while(true){
-    alert(v)
-    let b = prompt('1 символ')
-    if(b.length == 1){
-        for (let i = 0; i < a.length; i++) {
-            if(b == a[i].toLowerCase()){
-                console.log(`Правельна буква ${i}`)
-                v[i] = b
+// let v = ["*" ,"*" , "*", "*", "*", "*", "*", "*"]
+// let clear = true;
+// while(clear){
+//     alert(v)
+//     let spr = 0;
+//     let b = prompt('1 символ')
+//     if(b.length == 1){
+//         for (let i = 0; i < a.length; i++) {
+//             if(b == a[i].toLowerCase()){
+//                 console.log(`Правельна буква ${i}`)
+//                 v[i] = b
               
-            }
-        }
+//             } else {
+//                 spr = spr + 1             }
+//         }
     
-    }else{
-        console.log('тільки 1 букву')
+//     }else{
+//         console.log('тільки 1 букву')
+//     }
+//     if (spr > 6) {
+//         clear = false;
+//     }
+// 
+
+
+
+
+
+
+/////////////////// 111111111111111111111
+
+let f = function (a, b) {
+    let c = 0
+    if (a > b) {
+        c = 1
+    } if (a < b) {
+        c = -1;
+    } if (a == b) {
+        c = 0;
     }
+    return c;
 }
+
+let a = +prompt('a =');
+let b = +prompt('b =');
+console.log('task 1')
+console.log(f(a, b));
+
+
+
+
+//////////////////////////// 2222222222222222222222
+let factorial = function (number) {
+    let total = 1;
+    for (i = 1; i <= number; ++i){
+        total = total * i;
+    }
+    return total;
+}
+
+let number = prompt('factorial');
+console.log('task 2')
+console.log(`${number}! =  ${factorial(number)}`);
+
+/////////////////////////////333333333333333333
+
+let numbers3 = function (z, x, y) {
+    let equal = z + x + y;
+    return Number(equal);
+}
+
+let
+z = prompt('number 1')
+x = prompt('number 2')
+y = prompt('number 3')
+console.log('task 3')
+console.log(numbers3(z,x,y))
