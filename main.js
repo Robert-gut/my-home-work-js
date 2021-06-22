@@ -369,49 +369,116 @@
 
 /////////////////// 111111111111111111111
 
-let f = function (a, b) {
-    let c = 0
-    if (a > b) {
-        c = 1
-    } if (a < b) {
-        c = -1;
-    } if (a == b) {
-        c = 0;
-    }
-    return c;
-}
+// let f = function (a, b) {
+//     let c = 0
+//     if (a > b) {
+//         c = 1
+//     } if (a < b) {
+//         c = -1;
+//     } if (a == b) {
+//         c = 0;
+//     }
+//     return c;
+// }
 
-let a = +prompt('a =');
-let b = +prompt('b =');
-console.log('task 1')
-console.log(f(a, b));
+// let a = +prompt('a =');
+// let b = +prompt('b =');
+// console.log('task 1')
+// console.log(f(a, b));
 
 
 
 
 //////////////////////////// 2222222222222222222222
-let factorial = function (number) {
-    let total = 1;
-    for (i = 1; i <= number; ++i){
-        total = total * i;
-    }
-    return total;
-}
+// let factorial = function (number) {
+//     let total = 1;
+//     for (i = 1; i <= number; ++i){
+//         total = total * i;
+//     }
+//     return total;
+// }
 
-let number = prompt('factorial');
-console.log('task 2')
-console.log(`${number}! =  ${factorial(number)}`);
+// let number = prompt('factorial');
+// console.log('task 2')
+// console.log(`${number}! =  ${factorial(number)}`);
 
 /////////////////////////////333333333333333333
 
-let numbers3 = function (z, x, y) {
-    let equal = z + x + y;
-    return Number(equal);
-}
+// let numbers3 = function (z, x, y) {
+//     let equal = z + x + y;
+//     return Number(equal);
+// }
 
-let
-z = prompt('number 1')
-x = prompt('number 2')
-y = prompt('number 3')
-console.log('task 3')
-console.log(numbers3(z,x,y))
+// let
+// z = prompt('number 1')
+// x = prompt('number 2')
+// y = prompt('number 3')
+// console.log('task 3')
+// console.log(numbers3(z,x,y))
+
+
+
+
+
+//////////////////                            висилица 
+
+
+
+
+
+// const words= ['січень', 'лютий', 'березень', 'квітень', 'травень', 'червень', 'червень', 'липень', 'серпень', 'вересень', 'жовтень', 'листопад', ]
+// let word = words[parseInt(Math.random()*10)];
+// alert(word)
+
+// let remainigLetters = word.length;
+// let newRemainigLetters = remainigLetters;
+
+// let lives = 6;
+
+// let answer = [];
+// for (let i = 0; i < word.length; i++) {
+//     answer[i] = '_';
+// }
+
+
+// while ((remainigLetters > 0) && (lives !== 0)) {
+//     let letter = prompt('Ввести 1 букву');
+
+//     if (letter.length != 1) {
+//         alert('Ввести тільки 1 букву!!!')
+//     } else if (letter == null) {
+//         alert('Кінець гри')
+//     } else {
+//         for (i = 0; i < word.length; i++) {
+//             if (letter == word[i].toLowerCase()) {
+//                 answer[i] = letter;
+//                 remainigLetters--;
+//                 alert(`${answer.join('')}`);
+//             }
+//         }
+//         if (remainigLetters == newRemainigLetters) {
+//             lives--;
+//         }
+//         newRemainigLetters = remainigLetters;
+
+        
+    
+//         if (lives == 0) {
+//             alert('ви програли!!! :|')
+//             // let img = document.body.createElement("IMG");
+//             // img.src = "img/1.jpg";
+//         } else if (remainigLetters == 0) {
+//             alert('ВИ ВИГРАЛИ! Вітаєм!!')
+//         }
+
+//     }
+// }
+
+
+
+
+
+
+//////////////////////////////// dz  21.06
+
+
