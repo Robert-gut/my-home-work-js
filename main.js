@@ -481,4 +481,534 @@
 
 //////////////////////////////// dz  21.06
 
+/////////////////////////////// task 111
+// let numbers = [2, 4, 5, 6, 9, 7, 10, 15, 18, 22];
 
+// let task1 = (numbers) => {
+//     document.write(`<h1 style = "color: blue">'task 1' :${numbers}</h1>`);
+// }
+
+// task1(numbers);
+
+// ////////////////////////////// task 222
+
+// let task2 = (numbers) => {
+//     for (i = 0; i < 10; i++){
+//         if (numbers[i] % 2 == 0) {
+//             document.write(`<h1 style = "color: red">task 2 : ${numbers[i]}</h1>`)
+//         }
+//     }
+// }
+
+// task2(numbers);
+
+// ////////////////////////////// task 333
+
+// let task3 = (numbers) => {
+//     let sum = 0;
+//     for (i = 0; i < 10; i++){
+//         sum = sum + numbers[i]
+//     }
+//     document.write(`<h1 style = "color: green">task 3 : ${sum}</h1>`)
+// }
+
+// task3(numbers);
+
+// ////////////////////////////// task 444
+
+// let task4 = (numbers) => {
+//     let max = 0;
+//     for (i = 0; i < 10; i++){
+//         if(numbers[i] > max) max = numbers[i]
+//     }
+//     document.write(`<h1 style = "color: yellow">task 4 : max ${max}</h1>`)
+// }
+
+// task4(numbers);
+
+// //////////////////////////////////// task 555
+
+// let index = +prompt('input index (куда добавить)');
+// let item = +prompt('input item(яку цифру добавить)');
+    
+// let task5 = (index,item) => {
+//     document.write(`<h1 style = "color: yellow">task 5 : ${numbers}</h1>`)
+//     numbers.splice( index, 0, item );;
+//     document.write(`<h1 style = "color: purple">task 5 : ${numbers}</h1>`)
+// }
+
+// task5(index, item);
+
+
+// //////////////////////////////////////////// task 666
+// let deleteIndex = +prompt('input index (delete!)' );
+
+    
+// let task6 = (index) => {
+//     numbers.splice(index, 1)
+//     document.write(`<h1 style = "color: brown">task 6 : ${numbers}</h1>`)
+// }
+
+// task6(deleteIndex);
+
+
+// let p = document.querySelector('p')
+
+// let $btn1 = document.querySelector('#btn1');
+// let $btn2 = document.querySelector('#btn2');
+// let $btn3 = document.querySelector('#btn3');
+// let $btn4 = document.querySelector('#btn4');
+
+// $btn1.onclick = () => {
+//     p.style.color = '#41544b';
+//     p.style.width = '600px'
+//     p.style.fontSize = '18px'
+//     p.style.margin = '50px auto'
+//     p.style.backgroundColor = '#f1fff2'
+//     p.style.padding = '10px'
+//     p.style.border = 'solid 3px  #595f7d'
+//     p.style.borderRadius = '5px'
+//     p.style.fontStyle = 'italic'
+//     p.style.fontWeight = '600'
+//     $btn1.style.backgroundColor = 'red'
+//     $btn1.style.borderRadius = '9px'
+// }
+
+// $btn2.onclick = () => {
+//     p.style.color = '#26143d';
+//     p.style.width = '850px'
+//     p.style.fontSize = '15px'
+//     p.style.margin = '50px 20px  50px auto'
+//     p.style.backgroundColor = '#ffe5e1'
+//     p.style.padding = '10px'
+//     p.style.border = 'dashed 8px  #4b3a91'
+//     p.style.borderRadius = '5px'
+//     p.style.fontStyle = 'italic'
+//     p.style.fontWeight = '600'
+//     $btn2.style.backgroundColor = 'red'
+//     $btn2.style.borderRadius = '9px'
+// }
+
+
+// $btn3.onclick = () => {
+//     p.style.color = '#2b3f3d';
+//     p.style.width = '750px'
+//     p.style.fontSize = '18px'
+//     p.style.margin = '50px 90px  50px auto'
+//     p.style.backgroundColor = '#d3d3d3'
+//     p.style.padding = '30px'
+//     p.style.border = 'dashed 10px  #696969'
+//     p.style.borderRadius = '3px 30px 30px 3px'
+//     p.style.fontStyle = 'italic'
+//     p.style.fontWeight = '600'
+//     $btn3.style.backgroundColor = 'red'
+//     $btn3.style.borderRadius = '9px'
+// }
+
+// $btn4.onclick = () => {
+//     p.style.color = '#22aeec';
+//     p.style.width = '450px'
+//     p.style.fontSize = '15px'
+//     p.style.margin = '40px 100px  40px auto'
+//     p.style.backgroundColor = '#483d8b'
+//     p.style.padding = '10px'
+//     p.style.border = '15px'
+//     p.style.borderColor = '#181971  #05061a  #05061a #181971'
+//     p.style.borderStyle = 'solid'
+//     p.style.borderRadius = '3px 25px 25px 3px'
+//     p.style.fontStyle = 'italic'
+//     p.style.fontWeight = '600'
+//     $btn4.style.backgroundColor = 'red'
+//     $btn4.style.borderRadius = '9px'
+// }
+
+
+
+//////////////////////////// галірея
+
+
+// let foto = document.querySelectorAll('img');
+
+// for (let i = 0; i < foto.length; i++) {
+//     foto[i].addEventListener('mouseenter', ()=>{
+//         foto[i].style.transition = '1s';
+//         foto[i].style.transform = 'scale(1.4)';
+//     })
+    
+// }
+// for (let i = 0; i < foto.length; i++) {
+//     foto[i].addEventListener('mouseleave', ()=>{
+//         foto[i].style.transition = '0.5s';
+//         foto[i].style.transform = 'none';
+//     })
+    
+// }
+
+
+
+//////////////////////////// 5 vscwm
+
+// let li = document.querySelectorAll('li');
+// let p = document.querySelector('p');
+// let img = document.querySelector('img');
+
+// for (let i = 0; i < li.length; i++) {
+//     li[i].addEventListener('click', ()=>{
+//         if (i == 0) {
+//             for (let i = 0; i < li.length; i++) {
+//                 li[i].style.color = 'black'
+//             }
+//             li[i].style.color = 'red'
+//             img.src = "img/1.jpg";
+//             p.textContent = 'місце 1'
+
+//         }
+//         if (i == 1) {
+//             for (let i = 0; i < li.length; i++) {
+//                 li[i].style.color = 'black'
+//             }
+//             li[i].style.color = 'red'
+//             img.src = "img/2.jpg";
+//             p.textContent = 'місце 2'
+
+//         }
+//         if (i == 2) {
+//             for (let i = 0; i < li.length; i++) {
+//                 li[i].style.color = 'black'
+//             }
+//             li[i].style.color = 'red'
+//             img.src = "img/3.jpg";
+//             p.textContent = 'місце 3'
+//         }
+//         if (i == 3) {
+//             for (let i = 0; i < li.length; i++) {
+//                 li[i].style.color = 'black'
+//             }
+//             li[i].style.color = 'red'
+//             img.src = "img/4.jpg";
+//             p.textContent = 'місце 4'
+//         }
+//         if (i == 4) {
+//             for (let i = 0; i < li.length; i++) {
+//                 li[i].style.color = 'black'
+//             }
+//             li[i].style.color = 'red'
+//             img.src = "img/5.jpg";
+//             p.textContent = 'місце 5'
+//         }
+//     })
+    
+// }
+
+
+
+// // task 111
+
+// let random_button = document.querySelector('.task1 button')
+// let resolt = document.querySelector('.task1 h2')
+
+// random_button.addEventListener('click', () => {
+//     resolt.innerHTML = Math.round(Math.random() * 100)
+// })
+
+
+// // task2
+
+// let dom = document.querySelector('body').onmousemove
+// let maus = document.querySelector('.task2 p')
+// document.querySelector('body').onmousemove = function(event) {
+//     document.querySelector('.x').innerHTML = 'X = ' + event.offsetX;
+//     document.querySelector('.y').innerHTML = 'Y = ' + event.offsetY;
+//     if(event.which == 1) {
+//         maus.innerHTML = 'ЛКМ'
+//     }if (event.which == 3) {
+//         maus.innerHTML = 'ПКМ'
+//     }
+// }
+
+
+// // task3
+
+// let but_h_s = document.querySelector('.task3 button');
+// let color_text = document.querySelector('.task3 p');
+// console.log(color_text.style.color)
+// but_h_s.addEventListener('click', () => {
+//     if (color_text.style.color == 'black') {
+//         color_text.style.color = 'burlywood'
+//     } else {
+//         color_text.style.color = 'black'
+//     }
+// })
+
+// // task4
+
+// let butt3 = document.querySelectorAll('.task4 button');
+// let text = document.querySelector('.task4 p')
+
+// butt3[0].addEventListener('click', () => {
+//     text.innerHTML = 'HTML Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis nisi, possimus alias quae quos autem velit animi! Eveniet, illum? Eius, provident omnis nobis quae doloremque impedit praesentium molestiae deleniti debitis.'
+// })
+// butt3[1].addEventListener('click', () => {
+//     text.innerHTML = 'CSS Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis nisi, possimus alias quae quos autem velit animi! Eveniet, illum? Eius, provident omnis nobis quae doloremque impedit praesentium molestiae deleniti debitis.'
+// })
+// butt3[2].addEventListener('click', () => {
+//     text.innerHTML = 'JS Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis nisi, possimus alias quae quos autem velit animi! Eveniet, illum? Eius, provident omnis nobis quae doloremque impedit praesentium molestiae deleniti debitis.'
+// })
+
+
+// // task5
+
+// let knopka = document.querySelectorAll('.task5 button');
+// let block = document.querySelectorAll('.task5 div')
+
+// for (let i = 0; i < knopka.length; i++) {
+//     knopka[i].addEventListener('click', () => {
+//         block[i].remove()
+//     })   
+// }
+
+
+// // task6
+
+// let percent = document.querySelector('.task6 button')
+// let progress = 0
+// let progressAll = document.querySelector('.task6 .progress .progressAll')
+
+// percent.addEventListener('click', () => {
+//     progress = progress + 5;
+//     if (progress > 100) {
+//         progress = 0
+//     }
+//     progressAll.style.width = `${progress}%`
+//     progressAll.innerHTML = `${progress}%`;
+// })
+
+
+
+
+
+
+// task menu
+
+
+// let main = document.querySelectorAll('.main')
+// let other = document.querySelectorAll('.other')
+// let left_st = document.querySelectorAll('.left_st')
+
+
+// main[0].addEventListener('click', () => {
+//     let displayValue = window.getComputedStyle(other[0]).display;
+//     if (displayValue === "none") {
+//         other[0].style.display = 'block'  
+//         other[1].style.display = 'block'
+//         left_st[0].style.transform = 'rotate(180deg)'
+//     } else {
+//         other[0].style.display = 'none'  
+//         other[1].style.display = 'none'
+//         left_st[0].style.transform = 'rotate(0deg)'
+//     }
+// })  
+// main[1].addEventListener('click', () => {
+//     let displayValue = window.getComputedStyle(other[2]).display;
+//     if (displayValue === "none") {
+//         other[2].style.display = 'block'  
+//         other[3].style.display = 'block'
+//         other[4].style.display = 'block'
+//         left_st[1].style.transform = 'rotate(180deg)'
+//     } else {
+//         other[2].style.display = 'none'  
+//         other[3].style.display = 'none'
+//         other[4].style.display = 'none'
+//         left_st[1].style.transform = 'rotate(0deg)'
+//     }  
+// })
+// main[2].addEventListener('click', () => {
+//     let displayValue = window.getComputedStyle(other[5]).display;
+//     if (displayValue === "none") {
+//         other[5].style.display = 'block'  
+//         other[6].style.display = 'block'
+//         other[7].style.display = 'block'
+//         left_st[2].style.transform = 'rotate(180deg)'
+//     } else {
+//         other[5].style.display = 'none'  
+//         other[6].style.display = 'none'
+//         other[7].style.display = 'none'
+//         left_st[2].style.transform = 'rotate(0deg)'
+//     }    
+// })
+
+// other[5].addEventListener('click', () => {
+//     document.querySelector('.p1').style.display = 'block'
+//     document.body.style.backgroundColor = '#191919'
+//     document.querySelector('ul').style.display = 'none'
+// })
+// other[6].addEventListener('click', () => {
+//     document.querySelector('.p2').style.display = 'block'
+//     document.body.style.backgroundColor = '#191919'
+//     document.querySelector('ul').style.display = 'none'
+// })
+// other[7].addEventListener('click', () => {
+//     document.querySelector('.p3').style.display = 'block'
+//     document.body.style.backgroundColor = '#191919'
+//     document.querySelector('ul').style.display = 'none'
+// })
+
+
+// document.querySelector('.p1').addEventListener('click', () => {
+//     let displayValue = window.getComputedStyle(document.querySelector('.p1')).display;
+//         if (displayValue === "block"){
+//             document.querySelector('.p1').style.display = 'none'
+//             document.body.style.backgroundColor = '#fff'
+//             document.querySelector('ul').style.display = 'block'
+//         }
+// })
+// document.querySelector('.p2').addEventListener('click', () => {
+//     let displayValue = window.getComputedStyle(document.querySelector('.p2')).display;
+//         if (displayValue === "block"){
+//             document.querySelector('.p2').style.display = 'none'
+//             document.body.style.backgroundColor = '#fff'
+//             document.querySelector('ul').style.display = 'block'
+//         }
+// })
+// document.querySelector('.p3').addEventListener('click', () => {
+//     let displayValue = window.getComputedStyle(document.querySelector('.p3')).display;
+//         if (displayValue === "block"){
+//             document.querySelector('.p3').style.display = 'none'
+//             document.body.style.backgroundColor = '#fff'
+//             document.querySelector('ul').style.display = 'block'
+//         }
+// })
+    
+
+
+
+
+// ігра
+
+// let $box = document.querySelector('div');
+
+
+// let getRandom = (min, max) => {
+//     return Math.random() * (max - min) + min;
+// }
+// let move = () => {
+//     let maxTop = window.innerHeight - 150;
+//     let maxLeft = window.innerWidth - 150;
+//     $box.style.top = getRandom(0, maxTop) + 'px';
+//     $box.style.top = getRandom(0, maxLeft) + 'px';
+// }
+// let interval = setInterval('move()', 500)
+// $box.addEventListener('click', () => {
+//     clearInterval(interval)
+// })
+
+
+// let $box = document.querySelector('div');
+
+// let $error = document.createElement('div')
+
+
+// $error.innerHTML = `<h1>Error!!!</h1> <button> Pay </button>`
+// let show = () => {
+//     $error.className = 'error'
+//     document.body.prepend($error)
+//     let btn = $error.querySelector('button')
+//     setTimeout(() => {
+//         $error.style.height = '100vh'
+//         btn.addEventListener('click', () => {
+//             $error.style.height = '0vh'
+//             setTimeout(() => {
+//                 $error.remove();
+//             },2000)
+//         })
+//     },200)
+// }
+
+// setTimeout('show()',3000)
+
+
+
+let $start = document.querySelector('#start')
+let $game = document.querySelector('#game')
+let $time_header = document.querySelector('#time-header')
+let $result_header = document.querySelector('#result-header')
+let $time = document.querySelector('#time')
+let $result = document.querySelector('#result')
+let $game_time = document.querySelector('#game-time')
+
+let score = 0
+let asTime = true
+
+
+$start.addEventListener('click',startGame)
+$game.addEventListener('click', ckickHandleBox)
+$game_time.addEventListener('input',time)
+
+function getRandom(min, max) {
+    return Math.floor(Math.random() * (max - min) + min)
+    
+}
+
+
+let renderBox = () => {
+    $game.innerHTML = ''
+    let box = document.createElement('div')
+    let size = getRandom(50, 125)
+    let maxTop = $game.getBoundingClientRect().height - size;
+    let maxLeft = $game.getBoundingClientRect().width - size;
+    box.style.width = box.style.height = size + 'px'
+    // box.style.background = '#000'
+    box.style.position = 'absolute'
+    box.style.cursor = 'pointer'
+    box.style.top = getRandom(0,maxTop) + 'px'
+    box.style.left = getRandom(0, maxLeft) + 'px'
+    box.setAttribute('data-box','box')
+    $game.insertAdjacentElement('afterbegin', box)
+    box.style.background = '#' + (Math.random().toString(16) + '000000').substring(2,8).toUpperCase();
+
+}
+function time(){
+    let tm = parseFloat($game_time.value) 
+    $time.textContent = tm.toFixed(1)
+}
+function ckickHandleBox(event) {
+    
+    if (event.target.dataset.box) {
+        score++
+        renderBox()
+        
+    }
+}
+
+function startGame() {
+    score = 0
+    $time_header.classList.remove('hide')
+    $result_header.classList.add('hide')
+    $start.classList.add('hide')
+    $game.style.background = '#fff'
+    $game_time.setAttribute('disabled',true)
+    renderBox()
+    let interval = setInterval(() => {
+        let time = parseFloat($time.textContent).toFixed(1)
+        if (time == 0) {
+            $time.textContent = 5
+        }
+        if (time > 0) {
+            time -= 0.1
+            $time.textContent = time.toFixed(1)
+        } else {
+            isTime = false
+            clearInterval(interval)
+            endGame()
+        }
+    }, 100);
+}
+function endGame() {
+    $game.innerHTML = ''
+    $start.classList.remove('hide')
+    $game.style.background = '#ccc'
+    $game_time.removeAttribute('disabled')
+    $time_header.classList.add('hide')
+    $result_header.classList.remove('hide')
+    $result.textContent = score
+}
