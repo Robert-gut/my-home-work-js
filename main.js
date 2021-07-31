@@ -928,87 +928,181 @@
 
 
 
-let $start = document.querySelector('#start')
-let $game = document.querySelector('#game')
-let $time_header = document.querySelector('#time-header')
-let $result_header = document.querySelector('#result-header')
-let $time = document.querySelector('#time')
-let $result = document.querySelector('#result')
-let $game_time = document.querySelector('#game-time')
+// let $start = document.querySelector('#start')
+// let $game = document.querySelector('#game')
+// let $time_header = document.querySelector('#time-header')
+// let $result_header = document.querySelector('#result-header')
+// let $time = document.querySelector('#time')
+// let $result = document.querySelector('#result')
+// let $game_time = document.querySelector('#game-time')
 
-let score = 0
-let asTime = true
+// let score = 0
+// let asTime = true
 
 
-$start.addEventListener('click',startGame)
-$game.addEventListener('click', ckickHandleBox)
-$game_time.addEventListener('input',time)
+// $start.addEventListener('click',startGame)
+// $game.addEventListener('click', ckickHandleBox)
+// $game_time.addEventListener('input',time)
 
-function getRandom(min, max) {
-    return Math.floor(Math.random() * (max - min) + min)
+// function getRandom(min, max) {
+//     return Math.floor(Math.random() * (max - min) + min)
     
-}
+// }
 
 
-let renderBox = () => {
-    $game.innerHTML = ''
-    let box = document.createElement('div')
-    let size = getRandom(50, 125)
-    let maxTop = $game.getBoundingClientRect().height - size;
-    let maxLeft = $game.getBoundingClientRect().width - size;
-    box.style.width = box.style.height = size + 'px'
-    // box.style.background = '#000'
-    box.style.position = 'absolute'
-    box.style.cursor = 'pointer'
-    box.style.top = getRandom(0,maxTop) + 'px'
-    box.style.left = getRandom(0, maxLeft) + 'px'
-    box.setAttribute('data-box','box')
-    $game.insertAdjacentElement('afterbegin', box)
-    box.style.background = '#' + (Math.random().toString(16) + '000000').substring(2,8).toUpperCase();
+// let renderBox = () => {
+//     $game.innerHTML = ''
+//     let box = document.createElement('div')
+//     let size = getRandom(50, 125)
+//     let maxTop = $game.getBoundingClientRect().height - size;
+//     let maxLeft = $game.getBoundingClientRect().width - size;
+//     box.style.width = box.style.height = size + 'px'
+//     // box.style.background = '#000'
+//     box.style.position = 'absolute'
+//     box.style.cursor = 'pointer'
+//     box.style.top = getRandom(0,maxTop) + 'px'
+//     box.style.left = getRandom(0, maxLeft) + 'px'
+//     box.setAttribute('data-box','box')
+//     $game.insertAdjacentElement('afterbegin', box)
+//     box.style.background = '#' + (Math.random().toString(16) + '000000').substring(2,8).toUpperCase();
 
-}
-function time(){
-    let tm = parseFloat($game_time.value) 
-    $time.textContent = tm.toFixed(1)
-}
-function ckickHandleBox(event) {
+// }
+// function time(){
+//     let tm = parseFloat($game_time.value) 
+//     $time.textContent = tm.toFixed(1)
+// }
+// function ckickHandleBox(event) {
     
-    if (event.target.dataset.box) {
-        score++
-        renderBox()
+//     if (event.target.dataset.box) {
+//         score++
+//         renderBox()
         
-    }
-}
+//     }
+// }
 
-function startGame() {
-    score = 0
-    $time_header.classList.remove('hide')
-    $result_header.classList.add('hide')
-    $start.classList.add('hide')
-    $game.style.background = '#fff'
-    $game_time.setAttribute('disabled',true)
-    renderBox()
-    let interval = setInterval(() => {
-        let time = parseFloat($time.textContent).toFixed(1)
-        if (time == 0) {
-            $time.textContent = 5
-        }
-        if (time > 0) {
-            time -= 0.1
-            $time.textContent = time.toFixed(1)
-        } else {
-            isTime = false
-            clearInterval(interval)
-            endGame()
-        }
-    }, 100);
-}
-function endGame() {
-    $game.innerHTML = ''
-    $start.classList.remove('hide')
-    $game.style.background = '#ccc'
-    $game_time.removeAttribute('disabled')
-    $time_header.classList.add('hide')
-    $result_header.classList.remove('hide')
-    $result.textContent = score
-}
+// function startGame() {
+//     score = 0
+//     $time_header.classList.remove('hide')
+//     $result_header.classList.add('hide')
+//     $start.classList.add('hide')
+//     $game.style.background = '#fff'
+//     $game_time.setAttribute('disabled',true)
+//     renderBox()
+//     let interval = setInterval(() => {
+//         let time = parseFloat($time.textContent).toFixed(1)
+//         if (time == 0) {
+//             $time.textContent = 5
+//         }
+//         if (time > 0) {
+//             time -= 0.1
+//             $time.textContent = time.toFixed(1)
+//         } else {
+//             isTime = false
+//             clearInterval(interval)
+//             endGame()
+//         }
+//     }, 100);
+// }
+// function endGame() {
+//     $game.innerHTML = ''
+//     $start.classList.remove('hide')
+//     $game.style.background = '#ccc'
+//     $game_time.removeAttribute('disabled')
+//     $time_header.classList.add('hide')
+//     $result_header.classList.remove('hide')
+//     $result.textContent = score
+// }
+
+
+
+
+
+// task1
+
+// let car = {
+//     brand: 'wv',
+//     model: 'passat',
+//     year: 2008,
+//     speed: 130
+// }
+
+// let info = ()=>{
+//     let p = document.querySelector('p')
+//     p.innerHTML = `Brand: ${car.brand} <br> Model: ${car.model} <br> Year: ${car.year} <br> Speed: ${car.speed}`
+// }
+// info()
+
+// let time = (km) => {
+//     let c =  (km / (car.speed / 60)) / 60;
+//     let d = 60 * (Math.floor(c) - c)
+//     let h = Math.floor((Math.floor(c) / 4)) + Math.floor(c)
+//     console.log(Math.abs(Math.floor(d)))
+//     console.log(h)
+//     let h3 = document.querySelector('h3')
+//     h3.innerHTML = `${km} км. ви проїдете за ${h} год. ${Math.abs(Math.floor(d))} хв. з ${Math.floor((Math.floor(c) / 4))} зуп. по 1 год`
+// }
+
+// time(prompt('Скільки км вам треба проїхати?'))
+
+
+
+// // task2
+
+// let newTime = document.querySelector('h1')
+
+// let date = () => {
+//     return new Date().toTimeString().replace(/ .*/, '')
+// } 
+// newTime.innerHTML = date()
+// setInterval(() => {
+//     newTime.innerHTML = date()
+// }, 1000);
+// let btn = document.querySelectorAll('button')
+// let input = document.querySelector('input')
+// let time1 = document.querySelector('.time')
+// let d = new Date()
+// let h, m, s;
+// h = d.getHours()
+// m = d.getMinutes()
+// s = d.getSeconds()
+
+// btn[0].addEventListener('click', () => {
+//     for (let i = 0; i < input.value; i++) {
+//         h++
+//         if (h == 24) {
+//             h = 0
+//         }
+//         time1.innerHTML = `${h}:${m}:${s}`
+//     }
+// })
+// btn[1].addEventListener('click', () => {
+//     for (let i = 0; i < input.value; i++) {
+//         m++
+//         if (m == 60) {
+//             h++
+//             if (h == 24) {
+//                 h = 0
+//             }
+//             m = 0
+//         }
+//         time1.innerHTML = `${h}:${m}:${s}`
+//     }
+// })
+// btn[2].addEventListener('click', () => {
+//     for (let i = 0; i < input.value; i++) {
+//         s++
+//         if (s == 60) {
+//             m++
+//             s = 0
+//             if (m == 60) {
+//                 h++
+//                 m = 0
+//                 if (h == 24) {
+//                     h = 0
+//                 }
+//             }
+//         }
+//         time1.innerHTML = `${h}:${m}:${s}`
+//     }
+// })
+
